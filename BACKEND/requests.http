@@ -1,0 +1,48 @@
+### CREATE STUDENT
+POST http://localhost:8000/api/v1/student/add
+X-Api-Key: SECRET
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "sam",
+  "email": "sammi2@gmail.com",
+  "phone": "0812328325971",
+  "major": "Computer Science",
+  "imageUrl": "sam2.jpg"
+}
+
+### DELETE STUDENT
+DELETE http://localhost:8000/api/v1/student/delete/1
+X-Api-Key: SECRET
+Accept: application/json
+
+### GET STUDENT
+GET http://localhost:8000/api/v1/student/find/1
+X-Api-Key: SECRET
+Content-Type: application/json
+Accept: application/json
+
+### UPDATE STUDENT
+PUT http://localhost:8000/api/v1/student/update/1
+X-Api-Key: SECRET
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "sammiiiii",
+  "email": "sammiiii@gmail.com",
+  "phone": "0823888888",
+  "major": "Computer Science",
+  "imageUrl": "sam2222.jpg"
+}
+
+###
+GET http://localhost:8000/api/v1/student/all
+X-Api-Key: SECRET
+Content-Type: application/json
+
+### SEND TO BROKER
+GET http://localhost:8000/api/v1/student/sendToBroker/1
+X-Api-Key: SECRET
+
